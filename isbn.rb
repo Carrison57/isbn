@@ -28,3 +28,7 @@ def string_space_or_dash?(number)
 
 	number
 end
+
+def number_index(number)
+	number[0] * number
+end

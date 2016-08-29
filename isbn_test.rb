@@ -46,8 +46,9 @@ class TestNoSpacesNoDashes < Minitest::Test
 
 end
 
-# class TestMuliplyIndex < Minitest::Test
-# 	def test_number_times_index
-# 		assert_equal(5, number_index(5))
-# 	end
-# end
+class TestMuliplyIndex < Minitest::Test
+	
+	def test_number_times_index
+		assert_equal(5, number_index(5))
+	end
+end
