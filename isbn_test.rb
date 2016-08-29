@@ -30,17 +30,21 @@ class Test_string_to_array < Minitest::Test
 	end
 end
 
-# class TestNoSpacesNoDashes < Minitest::Test
+class TestNoSpacesNoDashes < Minitest::Test
 
-# 	def test_no_spaces
-# 		assert_equal("1","2","3","4","5", string_space_or_dash?("123 45"))
-# 	end
+	def test_no_spaces
+		assert_equal("12345", string_space_or_dash?("123 45"))
+	end
 
-# 	def test_no_dashes
-# 		assert_equal("12345", string_space_or_dash?("123-45"))
-# 	end
+	def test_no_dashes
+		assert_equal("12345", string_space_or_dash?("123-45"))
+	end
 
-# end
+	def test_string_with_dash_and_space
+		assert_equal("0123456789", string_space_or_dash?("0123-4 5--6 789"))
+	end
+
+end
 
 # class TestMuliplyIndex < Minitest::Test
 # 	def test_number_times_index

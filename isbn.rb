@@ -19,14 +19,12 @@ def empty_array(string)
 	string.split("") #converts from sting to array	
 end
 
-def string_space_or_dash?(number_no_space_no_dash)
-	if number_no_space_no_dash.include? " "
-		number_no_space_no_dash.delete " "
-	elsif number_no_space_no_dash.include? "-"
-		number_no_space_no_dash.delete "-"
-	else
-		string
+def string_space_or_dash?(number)
+	remove = [" ", "-"]
+
+	remove.each do |value|
+		number.delete! value if number.include? value
 	end
+
+	number
 end
-
-
