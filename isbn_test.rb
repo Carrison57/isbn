@@ -46,9 +46,26 @@ class TestNoSpacesNoDashes < Minitest::Test
 
 end
 
-class TestMuliplyIndex < Minitest::Test
+class TestMuliplyPositionTimesNumber < Minitest::Test
 	
-	def test_number_times_index
-		assert_equal(5, number_index(5))
+	def test_number_position_times_number
+		assert_equal([7, 8, 6, 4, 15, 54, 28, 56, 54], number_position_and_index(["7", "4", "2", "1", "3", "9", "4", "7", "6"]))
 	end
+
+	def test_number_position_times_number
+		assert_equal(232, sum_of_array([7, 8, 6, 4, 15, 54, 28, 56, 54]))
+	end
+end
+
+class TestModulusOfNumber
+	
+	def test_for_modulus_returns_one
+		assert_equal(1, modulus_number(232))
+	end
+
+	def test_for_21_returns_x
+		assert_equal("10", modulus_number(21))
+	end
+
+
 end
