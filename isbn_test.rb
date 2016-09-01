@@ -64,7 +64,7 @@ class TestModulusOfNumber
 	end
 
 	def test_for_21_returns_x
-		assert_equal("10", modulus_number(21))
+		assert_equal("X", modulus_number(21))
 	end
 
 

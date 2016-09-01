@@ -49,13 +49,3 @@ def modulus_number(sum)
 		checksum
 	end
 end
-
-
-
-
-#(different function)
-#counter = 1
-#i = 0
-
-#num.each do |i|
-	#
