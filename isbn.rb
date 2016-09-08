@@ -1,5 +1,5 @@
 def valid_isbn?(num)
-	if num.length == 10
+	if num.length == 10 || num.length == 13
 		true
 	else
 		false

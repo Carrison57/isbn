@@ -40,4 +40,4 @@ def isbn_number(string)
         end
 end
 
-isbn_number("47804006")
+isbn_number("47804012")

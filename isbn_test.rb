@@ -67,5 +67,8 @@ class TestModulusOfNumber
 		assert_equal("X", modulus_number(21))
 	end
 
+	def test_modulus_is_equal_to_last_index_of_array
+		assert_equal()
+
 
 end
