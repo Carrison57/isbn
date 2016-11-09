@@ -14,5 +14,5 @@ post "/isbn" do
   		result = "Invalid"
   	end
 
-	"Your isbn number #{result}"
+	"Your isbn number is #{result}"
 end

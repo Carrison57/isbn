@@ -99,7 +99,6 @@ end
 def valid_isbn_10_or_13(isbn_string_of_nums)
 
 	no_invalid_char = string_space_or_dash?(isbn_string_of_nums)
-
 	isbn_array = empty_array(no_invalid_char)
 
 	if isbn_array.length == 10
@@ -120,24 +119,3 @@ def valid_isbn_10_or_13(isbn_string_of_nums)
 		false
 	end
 end
-# def validating_isbn_numbers
-# 	input_file = 'isbn_csv.csv'
-# 	output_with_results = 'output_with_results_isbn_file.csv'
-# 	file_new = File.open(output_with_results, 'w')
-
-# 		CSV.foreach(input_file) do |row|
-
-# 			if row[1] == 'ISBN'
-# 			result = "CHECK"
-# 			elsif valid_isbn_10_or_13(row[1]) == true
-# 			result = "VALID"
-# 			else
-# 			result = "INVALID"
-# 			end
-# 		file << row[0] + "," + row[1] + "," + result + "\n"
-# 		end
-# 	file_new.close
-# end
-
-# validating_isbn_numbers
-

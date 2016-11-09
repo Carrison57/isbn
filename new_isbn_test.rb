@@ -45,9 +45,9 @@ class TestNoSpacesNoDashes < Minitest::Test
 	end
 
 	def test_for_X_to_be_replaced_with_10_at_check_degit_pos
-        assert_equal(["0","8","0","4","4","2","9","5","7","10"], update_check_digit_containing_X(["0","8","0","4","4","2","9","5","7","x"]))
-        assert_equal(["0","8","0","4","4","2","9","5","7","8"], update_check_digit_containing_X(["0","8","0","4","4","2","9","5","7","8"]))
-        assert_equal(["0","8","0","4","x","2","9","5","7","8"], update_check_digit_containing_X(["0","8","0","4","x","2","9","5","7","8"]))
+        assert_equal(["0","8","0","4","4","2","9","5","7","10"], convert_x(["0","8","0","4","4","2","9","5","7","x"]))
+        assert_equal(["0","8","0","4","4","2","9","5","7","8"], convert_x(["0","8","0","4","4","2","9","5","7","8"]))
+        assert_equal(["0","8","0","4","x","2","9","5","7","8"], convert_x(["0","8","0","4","x","2","9","5","7","8"]))
     end
 
     def test_for_10_digit_math
@@ -87,3 +87,4 @@ class TestBothFunctions < Minitest::Test
 	end
 
 end
+
